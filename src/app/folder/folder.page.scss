@@ -1,6 +1,41 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+// :root {
+//   --ion-color-primary: rgb(17, 86,102);
+//   --ion-color-primary-darker: rgb(9, 48, 56);
+// }
+
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
 }
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ion-color-primary);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+form ion-input, form ion-label, form ion-button, ion-button, nav {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+// ion-menu-button {
+//   color: var(--ion-color-primary);
+// }
 
 #container {
   text-align: center;
@@ -19,10 +54,108 @@ ion-menu-button {
 #container p {
   font-size: 16px;
   line-height: 22px;
-  color: #8c8c8c;
+  // color: #8c8c8c;
   margin: 0;
 }
+h4{
+  color: #000;
+}
 
-#container a {
-  text-decoration: none;
+
+// #container a {
+  // text-decoration: none;
+// }
+ion-img{
+  height: 200px;
+}
+
+form ion-input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+form ion-input:focus {
+  outline: solid 1px var(--ion-color-primary);
+  background: rgb(109,  255,  182);
+}
+
+form ion-input{
+  border: solid 1px #000 ;
+  background: rgb(231, 240, 236);
+  color: #000;
+}
+
+
+form ion-button {
+  border: none;
+  background: var(--ion-color-primary);
+  color: rgb(251, 251, 251);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+form ion-button:hover {
+  background: var(--ion-color-primary-darker);
+}
+
+ion-button {
+  border: none;
+  background: var(--ion-color-primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.paragrafo-resulatado{
+  background: rgb(109,  255,  182);
+  padding: 10px 20px;
+}
+
+ion-button:hover {
+  background: var(--ion-color-primary-darker);
+}
+div {
+  background: #008b8b;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+ion-label{
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+ion-input, ion-label {
+  margin: .4rem 0;
+}
+
+nav {
+  border: none;
+  background: var(--ion-color-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+nav:hover {
+  background: var(--ion-color-primary-darker);
+}
+a {
+  display: block;
+  text-decoration:none;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
 }

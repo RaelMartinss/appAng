@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>{{ ola }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +13,26 @@
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-img src="/assets/icon/Naruto.png"></ion-img>
 
-  <div id="container">
+  <div class="container">
+    <h4> % Quebra cozimento</h4>
+
+    <form id="form" method="get">
+      <ion-label>PESO INICIAL</ion-label>
+      <ion-input type="number" name="peso" value="peso" id="pesoInicial"></ion-input>
+
+      <ion-label>Peso Final</ion-label>
+      <ion-input type="number" name="peso1" id="pesoFinal"></ion-input>
+
+      <ion-button type="submit" fill="clear">Calcular</ion-button>
+
+      <ion-button (click)="limpa()">Reset P2</ion-button>
+
+    </form>
+    <ion-button id="btn" fill="clear">Refresh</ion-button>
+    <div id="calculo"></div>
+  <div id="resu"></div>
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
