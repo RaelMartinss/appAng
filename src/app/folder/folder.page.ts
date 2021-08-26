@@ -17,8 +17,6 @@ export class FolderPage implements OnInit {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
 
 
-
-
     const form = document.querySelector('#form');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -28,8 +26,6 @@ export class FolderPage implements OnInit {
       const pesoFinal = (<HTMLInputElement>document.getElementById('pesoFinal')).value;
 
       
-    
-
       const pesoI = Number(pesoInicial);
       const pesoF = Number(pesoFinal);
 
@@ -50,18 +46,7 @@ export class FolderPage implements OnInit {
       // limpa(lim);
      
     });
-    function limpa(){
 
-
-      // if ((<HTMLInputElement>document.getElementById('pesoFinal')).value != ''){ 
-      //   (<HTMLInputElement>document.getElementById('pesoFinal')).value = ""; 
-      // }
-      var resetForm: HTMLFormElement;
-      resetForm = <HTMLFormElement>document.getElementById('pesoFinal');
-      if(resetForm)
-        resetForm.reset();
-    }
-    limpa();
 
     function quebra(peso1, peso2) {
 

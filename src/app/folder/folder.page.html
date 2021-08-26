@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ ola }}</ion-title>
+    <ion-title>{{ folder }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -27,10 +27,12 @@
 
       <ion-button type="submit" fill="clear">Calcular</ion-button>
 
-      <ion-button (click)="limpa()">Reset P2</ion-button>
+      <!-- <ion-input onclick="limpa()">Reset P2</ion-input> -->
 
     </form>
-    <ion-button id="btn" fill="clear">Refresh</ion-button>
+    <ion-button type="button" onclick="window.location.reload()" id="btn" fill="clear">Refresh</ion-button>
+    
+
     <div id="calculo"></div>
   <div id="resu"></div>
     <strong class="capitalize">{{ folder }}</strong>
